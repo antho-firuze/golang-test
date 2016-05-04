@@ -1,6 +1,12 @@
 <html>
 <head></head>
 <body>
-	Hello, {{.Name}} Kerenz...
+	<p>Hello, {{.Name}} Kerenz...<p>
+	
+	{{if .DBStatus}}
+		<p>The database connection is alive !<p>
+	{{else}}
+		<p>The database connection is dead !<p>
+	{{end}}
 </body>
 </html>
